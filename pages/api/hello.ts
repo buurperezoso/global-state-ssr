@@ -11,3 +11,7 @@ export default function handler(
 ) {
   res.status(200).json({ name: 'John Doe' })
 }
+const handleName = (name: string): string => {
+  const newName = name + '!';
+  return newName;
+}
